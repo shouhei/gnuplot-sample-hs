@@ -1,0 +1,77 @@
+
+==================== FINAL INTERFACE ====================
+2017-03-26 10:48:23.160276 UTC
+
+interface gnupl_8te0n3tHxeXJBGz5R6cSUm:Lib 7102
+  interface hash: 5c082b5fe0e172445c5c523a0d17e261
+  ABI hash: 6e38568786f2acb50d573bcce458d35f
+  export-list hash: 0aacb1c95cb1a91e879ea2f344c35d08
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 56b9a755d22be00f2eba50f3628a69c7
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lib.someFunc
+module dependencies:
+package dependencies: array-0.5.1.0@array_E0sTtauuKsGDLZoT7lTbgZ
+                      base-4.8.1.0* containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN
+                      data-accessor-0.2.2.6@dataa_EJ37ALHEezZ0CHUdgdraLT
+                      data-accessor-transformers-0.2.1.6@dataa_K7yRwEC1ulMF1s950F720j
+                      deepseq-1.4.1.1@deeps_LbCWUlehDDeLxurARKDH5o
+                      directory-1.2.2.0@direc_KowvXytSqazBcvN7MGpFtg
+                      exceptions-0.8.0.2@excep_8GsEeHgaIks3pVGk6GaELJ
+                      filepath-1.4.0.0@filep_KsGE6pHE5eZHSN90ZVax6A ghc-prim-0.4.0.0
+                      gnuplot-0.5.4@gnupl_GABtZyeLkXE3aUgShVWeys integer-gmp-1.0.0.0
+                      mtl-2.2.1@mtl_KMpng31YRYc5JfMWFZ3FCU
+                      process-1.2.3.0@proce_FLTz0SLwyG6LJUpZ52HjkU
+                      stm-2.4.4@stm_C1kFMnPqFjvDhFjgMZGUpr
+                      temporary-1.2.0.3@tempo_Il0r9HZboDhGin7P716nyP
+                      time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH
+                      transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X
+                      unix-2.7.1.0@unix_A3WgcI5QiHK4PDo4jSYdwQ
+                      utility-ht-0.0.11@utili_2TDzwuUXV1L537S7AEMkBP
+orphans: base-4.8.1.0:GHC.Base base-4.8.1.0:GHC.Float
+         stm-2.4.4@stm_C1kFMnPqFjvDhFjgMZGUpr:Control.Monad.STM
+         time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH:Data.Time.Calendar.Gregorian
+         time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH:Data.Time.Format.Parse
+         time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH:Data.Time.LocalTime.LocalTime
+         transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X:Control.Monad.Trans.Error
+family instance modules: base-4.8.1.0:Control.Applicative
+                         base-4.8.1.0:Data.Either base-4.8.1.0:Data.Functor.Identity
+                         base-4.8.1.0:Data.Monoid base-4.8.1.0:Data.Type.Equality
+                         base-4.8.1.0:Data.Void base-4.8.1.0:GHC.Exts
+                         base-4.8.1.0:GHC.Generics
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Map.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Set.Base
+import  -/  base-4.8.1.0:Prelude 518f762991bc287d78f21a73c974da1f
+import  -/  base-4.8.1.0:System.IO 29a6f3d7c8ad8a4e6200d8bbb6e70aae
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+import  -/  gnuplot-0.5.4@gnupl_GABtZyeLkXE3aUgShVWeys:Graphics.Gnuplot.Simple c1d0f95531330584c170de7eb2cf7a95
+d2c1e1e29671946bd9b4840dc91dea2c
+  someFunc :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Lib.someFunc1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+389ef58fd113606fbf6728e59930f024
+  someFunc1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ eta :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   Lib.someFunc2
+                   GHC.Types.True
+                   eta) -}
+1a8a7e39094e76495ae60ad971b2650f
+  someFunc2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "someFunc"#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
