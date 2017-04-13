@@ -7,12 +7,12 @@
   (major1) == 4 && (major2) <  8 || \
   (major1) == 4 && (major2) == 8 && (minor) <= 1)
 
-/* package gnuplot-0.5.4 */
-#define VERSION_gnuplot "0.5.4"
-#define MIN_VERSION_gnuplot(major1,major2,minor) (\
+/* package hmatrix-0.16.1.5 */
+#define VERSION_hmatrix "0.16.1.5"
+#define MIN_VERSION_hmatrix(major1,major2,minor) (\
   (major1) <  0 || \
-  (major1) == 0 && (major2) <  5 || \
-  (major1) == 0 && (major2) == 5 && (minor) <= 4)
+  (major1) == 0 && (major2) <  16 || \
+  (major1) == 0 && (major2) == 16 && (minor) <= 1)
 
 /* tool gcc-4.2.1 */
 #define TOOL_VERSION_gcc "4.2.1"
@@ -63,5 +63,5 @@
   (major1) == 0 && (major2) <  29 || \
   (major1) == 0 && (major2) == 29 && (minor) <= 2)
 
-#define CURRENT_PACKAGE_KEY "gnupl_8te0n3tHxeXJBGz5R6cSUm"
+#define CURRENT_PACKAGE_KEY "gnupl_LniemKCuhdu8NdSF058SWe"
 

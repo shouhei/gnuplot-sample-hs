@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2017-03-26 10:48:23.160276 UTC
+2017-04-13 15:00:23.382049 UTC
 
 interface gnupl_8te0n3tHxeXJBGz5R6cSUm:Lib 7102
-  interface hash: 5c082b5fe0e172445c5c523a0d17e261
-  ABI hash: 6e38568786f2acb50d573bcce458d35f
+  interface hash: a22da170e02c5055956e94771795c1c5
+  ABI hash: db243f9cdf4f1e2b5eae6d95272d0e9d
   export-list hash: 0aacb1c95cb1a91e879ea2f344c35d08
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 56b9a755d22be00f2eba50f3628a69c7
@@ -45,28 +45,131 @@ family instance modules: base-4.8.1.0:Control.Applicative
                          containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Map.Base
                          containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Set.Base
 import  -/  base-4.8.1.0:Prelude 518f762991bc287d78f21a73c974da1f
-import  -/  base-4.8.1.0:System.IO 29a6f3d7c8ad8a4e6200d8bbb6e70aae
 import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
 import  -/  gnuplot-0.5.4@gnupl_GABtZyeLkXE3aUgShVWeys:Graphics.Gnuplot.Simple c1d0f95531330584c170de7eb2cf7a95
-d2c1e1e29671946bd9b4840dc91dea2c
+49570704c9427e39bdcbbbe18b0e9697
   someFunc :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: InlineRule (0, True, True)
                 Lib.someFunc1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
-389ef58fd113606fbf6728e59930f024
+996e0e604339bef443583a4bffe89cd2
   someFunc1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1, Strictness: <L,U>,
-     Unfolding: (\ eta :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
-                 GHC.IO.Handle.Text.hPutStr2
-                   GHC.IO.Handle.FD.stdout
+     Unfolding: (\ eta1 :: GHC.Prim.State#
+                             GHC.Prim.RealWorld[OneShot] ->
+                 Graphics.Gnuplot.Simple.plotList3
+                   Lib.someFunc13
+                   Graphics.Gnuplot.Simple.plotDots1
                    Lib.someFunc2
-                   GHC.Types.True
-                   eta) -}
-1a8a7e39094e76495ae60ad971b2650f
-  someFunc2 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "someFunc"#) -}
+                     `cast`
+                   (Trans
+                        (<GHC.Types.Int>_R
+                         ->_R Trans
+                                  (<GHC.IO.FilePath>_R
+                                   ->_R Sym (Data.Functor.Identity.NTCo:Identity[0]
+                                                 <([Graphics.Gnuplot.Private.Plot.File
+                                                      (Graphics.Gnuplot.Private.Graph2D.T
+                                                         GHC.Types.Double GHC.Types.Double)],
+                                                   GHC.Types.Int)>_R))
+                                  (Sym (Control.Monad.Trans.Reader.NTCo:ReaderT[0]
+                                            <GHC.IO.FilePath>_R
+                                            <Data.Functor.Identity.Identity>_R
+                                            <([Graphics.Gnuplot.Private.Plot.File
+                                                 (Graphics.Gnuplot.Private.Graph2D.T
+                                                    GHC.Types.Double GHC.Types.Double)],
+                                              GHC.Types.Int)>_N)))
+                        (Trans
+                             (Sym (Control.Monad.Trans.State.Lazy.NTCo:StateT[0]
+                                       <GHC.Types.Int>_N
+                                       <Control.Monad.Trans.Reader.Reader GHC.IO.FilePath>_R
+                                       <[Graphics.Gnuplot.Private.Plot.File
+                                           (Graphics.Gnuplot.Private.Graph2D.T
+                                              GHC.Types.Double GHC.Types.Double)]>_N))
+                             (Sym (Graphics.Gnuplot.Private.Plot.NTCo:T[0]
+                                       <Graphics.Gnuplot.Private.Graph2D.T
+                                          GHC.Types.Double GHC.Types.Double>_N))))
+                   eta1) -}
+3a4f9a8f51ac4ef22ce83066ba71db97
+  someFunc10 :: (GHC.Types.Int, GHC.Types.Int)
+  {- HasNoCafRefs, Unfolding: ((Lib.someFunc11, Lib.someFunc11)) -}
+b3f49d8cf719327bd23403d7cd44d382
+  someFunc11 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 0) -}
+57637f058bfb94e0f31fd7d8a9af5314
+  someFunc12 ::
+    Graphics.Gnuplot.Value.Tuple.C (GHC.Types.Int, GHC.Types.Int)
+  {- Unfolding: (Graphics.Gnuplot.Value.Tuple.$fC(,)
+                   @ GHC.Types.Int
+                   @ GHC.Types.Int
+                   Graphics.Gnuplot.Value.Tuple.$fCInt
+                   Graphics.Gnuplot.Value.Tuple.$fCInt) -}
+ab48d603737eb90e6022fd3a0dc341da
+  someFunc13 :: [Graphics.Gnuplot.Simple.Attribute]
+  {- Unfolding: (GHC.Types.:
+                   @ Graphics.Gnuplot.Simple.Attribute
+                   Lib.someFunc14
+                   (GHC.Types.[] @ Graphics.Gnuplot.Simple.Attribute)) -}
+2cdeb15e33654f7db045e977f86b8a66
+  someFunc14 :: Graphics.Gnuplot.Simple.Attribute
+  {- Unfolding: (Graphics.Gnuplot.Simple.Title Lib.someFunc15) -}
+9dea2029a54adeca233a8fce26cb98d6
+  someFunc15 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "hello"#) -}
+bf0a756b4888d949f41bc0a39022a2cd
+  someFunc2 ::
+    GHC.Types.Int
+    -> GHC.IO.FilePath
+    -> ([Graphics.Gnuplot.Private.Plot.File
+           (Graphics.Gnuplot.Private.Graph2D.T
+              GHC.Types.Double GHC.Types.Double)],
+        GHC.Types.Int)
+  {- Unfolding: (Graphics.Gnuplot.Plot.TwoDimensional.$wa2
+                   @ GHC.Types.Double
+                   @ GHC.Types.Double
+                   @ (GHC.Types.Int, GHC.Types.Int)
+                   Lib.someFunc12
+                   Graphics.Gnuplot.Simple.plotList2
+                     `cast`
+                   (Sym (Graphics.Gnuplot.Private.Graph2DType.NTCo:T[0]
+                             <GHC.Types.Double>_P
+                             <GHC.Types.Double>_P
+                             <(GHC.Types.Int, GHC.Types.Int)>_P))
+                   Lib.someFunc3) -}
+41db43a45ff59c11c98e7d680c545c0e
+  someFunc3 :: [(GHC.Types.Int, GHC.Types.Int)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Int, GHC.Types.Int)
+                   Lib.someFunc10
+                   Lib.someFunc4) -}
+642a32bdd66809812e89de7b77e08453
+  someFunc4 :: [(GHC.Types.Int, GHC.Types.Int)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Int, GHC.Types.Int)
+                   Lib.someFunc8
+                   Lib.someFunc5) -}
+c823b2ffabf92ac3c9f42324fbb74bca
+  someFunc5 :: [(GHC.Types.Int, GHC.Types.Int)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Int, GHC.Types.Int)
+                   Lib.someFunc6
+                   (GHC.Types.[] @ (GHC.Types.Int, GHC.Types.Int))) -}
+1e1bf3082bd8088bd45c79e149de1936
+  someFunc6 :: (GHC.Types.Int, GHC.Types.Int)
+  {- HasNoCafRefs, Unfolding: ((Lib.someFunc7, Lib.someFunc7)) -}
+9ceab074bc89c327411c2efd19c2f104
+  someFunc7 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 2) -}
+b785e5080128b0162dada48308c95579
+  someFunc8 :: (GHC.Types.Int, GHC.Types.Int)
+  {- HasNoCafRefs, Unfolding: ((Lib.someFunc9, Lib.someFunc9)) -}
+fb1b0b8a6ffb547e8cfec7078433c522
+  someFunc9 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 1) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:
